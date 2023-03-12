@@ -5,12 +5,11 @@ const Container = styled.div`
   width: 100vw;
   height: 100vh;
   background: linear-gradient(
-      rgba(255, 255, 255, 0.5),
-      rgba(255, 255, 255, 0.5)
+      rgba(255, 255, 255, 0.3),
+      rgba(255, 255, 255, 0.1)
     ),
-    url("https://images.pexels.com/photos/6984661/pexels-photo-6984661.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")
+    url("https://i.imgur.com/0fHUR9W.gif")
       center;
-  background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;

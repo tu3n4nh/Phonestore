@@ -3,17 +3,18 @@ import styled from "styled-components";
 import { login } from "../redux/apiCalls";
 import { mobile } from "../responsive";
 import { useDispatch, useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 
 const Container = styled.div`
   width: 100vw;
   height: 100vh;
   background: linear-gradient(
-      rgba(255, 255, 255, 0.5),
-      rgba(255, 255, 255, 0.5)
+      rgba(255, 255, 255, 0.3),
+      rgba(255, 255, 255, 0.1)
     ),
-    url("https://images.pexels.com/photos/6984650/pexels-photo-6984650.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")
+    url("https://i.imgur.com/0fHUR9W.gif")
       center;
-  background-size: cover;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -57,12 +58,12 @@ const Button = styled.button`
   }
 `;
 
-const Link = styled.a`
-  margin: 5px 0px;
-  font-size: 12px;
-  text-decoration: underline;
-  cursor: pointer;
-`;
+// const Link = styled.a`
+//   margin: 5px 0px;
+//   font-size: 12px;
+//   text-decoration: underline;
+//   cursor: pointer;
+// `;
 
 const Error = styled.span`
   color: red;
@@ -97,7 +98,7 @@ const Login = () => {
           </Button>
           {error && <Error>Something went wrong...</Error>}
           <Link>DO NOT YOU REMEMBER THE PASSWORD?</Link>
-          <Link>CREATE A NEW ACCOUNT</Link>
+          <Link to={`/register`}>CREATE A NEW ACCOUNT</Link>
         </Form>
       </Wrapper>
     </Container>
